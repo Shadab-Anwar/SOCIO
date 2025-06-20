@@ -16,7 +16,7 @@ type User = {
     phone: string;
   };
 
-const page = () => {
+const Page = () => {
   const [data, setdata] = useState<User[]>([]);
   const [data1, setdata1] = useState<User[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -94,4 +94,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
