@@ -1,6 +1,9 @@
+"use client"
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
+    const router = useRouter();
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="flex-1">
@@ -31,7 +34,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a>Logout</a>
+              <a onClick={() => router.push("/LoginPage")}>Logout</a>
             </li>
           </ul>
         </div>
